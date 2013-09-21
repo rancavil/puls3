@@ -1,0 +1,7 @@
+<header>
+	<h1 id="titulo_header">Puls3: Comunidad de gente cool, atractiva y millonaria</h1>
+	 {% if request.user.is_authenticated %}
+	 	Hola <strong>{{ request.user }}</strong> (
+		<a href="{% url 'disconnect' %}">Desconectate</a>)
+	 {% endif %}
+</header>
